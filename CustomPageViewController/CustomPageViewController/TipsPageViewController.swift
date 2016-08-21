@@ -33,7 +33,7 @@ class TipsPageViewController: UIPageViewController {
         return _modelController!
     }
     
-    private func notifyTutorialDelegateOfNewIndex() {
+    private func notifyTipsDelegateOfNewIndex() {
         if let firstViewController = viewControllers?.first,
             let index = self.viewControllers?.indexOf(firstViewController) {
             // let index = orderedViewControllers.indexOf(firstViewController) {
@@ -50,7 +50,7 @@ class TipsPageViewController: UIPageViewController {
                             // Setting the view controller programmatically does not fire
                             // any delegate methods, so we have to manually notify the
                             // 'tutorialDelegate' of the new index.
-                            self.notifyTutorialDelegateOfNewIndex()
+                            self.notifyTipsDelegateOfNewIndex()
         })
     }
     
