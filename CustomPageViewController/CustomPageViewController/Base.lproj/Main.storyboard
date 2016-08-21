@@ -27,6 +27,9 @@
                                 <rect key="frame" x="20" y="285" width="59" height="30"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="Previous"/>
+                                <connections>
+                                    <action selector="previousButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BKL-xd-YFi"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tips" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ARs-Uh-mMA">
                                 <rect key="frame" x="275" y="28" width="50" height="32"/>

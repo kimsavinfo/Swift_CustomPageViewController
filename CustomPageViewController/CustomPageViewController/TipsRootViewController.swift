@@ -42,6 +42,9 @@ class TipsRootViewController: UIViewController {
     @IBAction func nextButtonPressed(sender: UIButton) {
         tipsPageViewController?.scrollToNextViewController()
     }
+    @IBAction func previousButtonPressed(sender: UIButton) {
+        tipsPageViewController?.scrollToPreviousViewController()
+    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

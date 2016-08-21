@@ -70,6 +70,13 @@ class TipsPageViewController: UIPageViewController {
         }
     }
     
+    func scrollToPreviousViewController(){
+        if let visibleViewController = viewControllers?.first,
+            let previousViewController = self.modelController.pageViewController(self, viewControllerBeforeViewController: visibleViewController) {
+            scrollToViewController(previousViewController, direction: .Reverse)
+        }
+    }
+
 }
 
 protocol TipsPageViewControllerDelegate: class {
