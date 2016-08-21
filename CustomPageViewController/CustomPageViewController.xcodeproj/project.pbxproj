@@ -12,7 +12,7 @@
 		B6E3A4BA1D69E8B000492F18 /* CustomPageViewController.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B6E3A4B81D69E8B000492F18 /* CustomPageViewController.xcdatamodeld */; };
 		B6E3A4BC1D69E8B000492F18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6E3A4BB1D69E8B000492F18 /* Assets.xcassets */; };
 		B6E3A4BF1D69E8B000492F18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6E3A4BD1D69E8B000492F18 /* LaunchScreen.storyboard */; };
-		B6E3A4C71D69E8F500492F18 /* TipsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E3A4C61D69E8F500492F18 /* TipsViewController.swift */; };
+		B6E3A4C71D69E8F500492F18 /* TipsRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E3A4C61D69E8F500492F18 /* TipsRootViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,7 +23,7 @@
 		B6E3A4BB1D69E8B000492F18 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B6E3A4BE1D69E8B000492F18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B6E3A4C01D69E8B000492F18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B6E3A4C61D69E8F500492F18 /* TipsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipsViewController.swift; sourceTree = "<group>"; };
+		B6E3A4C61D69E8F500492F18 /* TipsRootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipsRootViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +62,7 @@
 				B6E3A4BD1D69E8B000492F18 /* LaunchScreen.storyboard */,
 				B6E3A4C01D69E8B000492F18 /* Info.plist */,
 				B6E3A4B81D69E8B000492F18 /* CustomPageViewController.xcdatamodeld */,
-				B6E3A4C61D69E8F500492F18 /* TipsViewController.swift */,
+				B6E3A4C61D69E8F500492F18 /* TipsRootViewController.swift */,
 			);
 			path = CustomPageViewController;
 			sourceTree = "<group>";
@@ -139,7 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B6E3A4BA1D69E8B000492F18 /* CustomPageViewController.xcdatamodeld in Sources */,
-				B6E3A4C71D69E8F500492F18 /* TipsViewController.swift in Sources */,
+				B6E3A4C71D69E8F500492F18 /* TipsRootViewController.swift in Sources */,
 				B6E3A4B21D69E8B000492F18 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

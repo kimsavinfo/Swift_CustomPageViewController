@@ -1,5 +1,5 @@
 //
-//  TipsViewController.swift
+//  TipsRootViewController.swift
 //  CustomPageViewController
 //
 //  Created by Kim SAVAROCHE on 21/08/2016.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TipsViewController: UIViewController {
+class TipsRootViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()

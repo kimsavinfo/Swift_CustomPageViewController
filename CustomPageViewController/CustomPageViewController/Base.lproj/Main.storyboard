@@ -5,10 +5,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--Tips View Controller-->
+        <!--Tips Root View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="TipsViewController" customModule="CustomPageViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="TipsRootViewController" customModule="CustomPageViewController" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -17,22 +17,58 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Tips" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ARs-Uh-mMA">
-                                <rect key="frame" x="279" y="28" width="42" height="21"/>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xoD-ED-Jtv">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <connections>
+                                    <segue destination="hRf-ne-vJj" kind="embed" identifier="showTipsPageControllerSegue" id="zBh-YI-NRh"/>
+                                </connections>
+                            </containerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1h3-zU-c7b">
+                                <rect key="frame" x="20" y="285" width="59" height="30"/>
+                                <state key="normal" title="Previous"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tips" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ARs-Uh-mMA">
+                                <rect key="frame" x="284" y="28" width="33" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="Us6-Pf-O5Q">
+                                <rect key="frame" x="281" y="555" width="39" height="37"/>
+                            </pageControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tBL-pS-sgV">
+                                <rect key="frame" x="548" y="285" width="32" height="30"/>
+                                <state key="normal" title="Next"/>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="Us6-Pf-O5Q" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9Ek-gU-ad4"/>
+                            <constraint firstItem="1h3-zU-c7b" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="IQh-LL-Uo6"/>
                             <constraint firstItem="ARs-Uh-mMA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IXO-F6-LUX"/>
+                            <constraint firstItem="xoD-ED-Jtv" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="MBP-QC-I4z"/>
+                            <constraint firstAttribute="trailing" secondItem="tBL-pS-sgV" secondAttribute="trailing" constant="20" id="Vel-Yd-YjJ"/>
+                            <constraint firstItem="1h3-zU-c7b" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="XZC-vE-JBd"/>
                             <constraint firstItem="ARs-Uh-mMA" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="cAE-h3-3IW"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Us6-Pf-O5Q" secondAttribute="bottom" constant="8" id="ebV-8V-713"/>
+                            <constraint firstItem="xoD-ED-Jtv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="mvm-fp-tcY"/>
+                            <constraint firstItem="tBL-pS-sgV" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ne2-hF-FC5"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="xoD-ED-Jtv" secondAttribute="bottom" id="wV1-H6-rah"/>
+                            <constraint firstAttribute="trailing" secondItem="xoD-ED-Jtv" secondAttribute="trailing" id="yOU-er-th5"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="325" y="388"/>
+        </scene>
+        <!--Page View Controller-->
+        <scene sceneID="lTK-ml-9nv">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="hRf-ne-vJj" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vuB-Cg-HRa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="985" y="388"/>
         </scene>
     </scenes>
 </document>
