@@ -62,13 +62,46 @@
             </objects>
             <point key="canvasLocation" x="325" y="388"/>
         </scene>
-        <!--Page View Controller-->
+        <!--Tips Page View Controller-->
         <scene sceneID="lTK-ml-9nv">
             <objects>
-                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="hRf-ne-vJj" sceneMemberID="viewController"/>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="hRf-ne-vJj" customClass="TipsPageViewController" customModule="CustomPageViewController" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vuB-Cg-HRa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="985" y="388"/>
+        </scene>
+        <!--Tips Data View Controller-->
+        <scene sceneID="Cca-L7-p5S">
+            <objects>
+                <viewController storyboardIdentifier="TipsDataViewController" id="4iR-Pl-gIN" customClass="TipsDataViewController" customModule="CustomPageViewController" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="LJl-eG-W8i"/>
+                        <viewControllerLayoutGuide type="bottom" id="E6W-9D-nne"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dsN-vY-viX">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a6j-0P-dJf">
+                                <rect key="frame" x="274" y="287" width="52" height="26"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="a6j-0P-dJf" firstAttribute="centerX" secondItem="dsN-vY-viX" secondAttribute="centerX" id="VkT-mG-Quq"/>
+                            <constraint firstItem="a6j-0P-dJf" firstAttribute="centerY" secondItem="dsN-vY-viX" secondAttribute="centerY" id="Vvf-1M-0Sp"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="dataLabel" destination="a6j-0P-dJf" id="FFf-bZ-nTD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bEY-k7-HDP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="983" y="1069"/>
         </scene>
     </scenes>
 </document>
