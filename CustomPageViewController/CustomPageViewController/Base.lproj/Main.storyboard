@@ -41,6 +41,9 @@
                                 <rect key="frame" x="548" y="285" width="32" height="30"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="nextButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Kti-f3-6Ef"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.97826086960000003" green="0.91848131079999995" blue="0.73914263440000005" alpha="1" colorSpace="calibratedRGB"/>

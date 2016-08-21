@@ -12,13 +12,16 @@ class TipsModelController: NSObject, UIPageViewControllerDataSource {
     
     var pageData: [String] = []
     
-    
     override init() {
         super.init()
         
         // Create the data model
         let dateFormatter = NSDateFormatter()
         pageData = dateFormatter.monthSymbols
+    }
+    
+    func getNumberOfPageData() -> Int {
+        return self.pageData.count
     }
     
     func viewControllerAtIndex(index: Int, storyboard: UIStoryboard) -> TipsDataViewController? {
@@ -61,7 +64,6 @@ class TipsModelController: NSObject, UIPageViewControllerDataSource {
         }
         return self.viewControllerAtIndex(index, storyboard: viewController.storyboard!)
     }
-    
 }
 
 
